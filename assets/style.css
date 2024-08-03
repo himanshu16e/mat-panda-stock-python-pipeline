@@ -1,0 +1,117 @@
+/* style.css*/
+
+/*General styles */
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    color: #333;
+}
+
+/*Header styles */
+.header{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img{
+    height: 50px;
+}
+
+.header h1{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+/* Navigation styles */
+.nav{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+}
+
+.nav a:hover{
+    color: #0056b3;
+}
+
+/* content styles */
+.content {
+    padding: 20px;
+}
+
+/* Content Table Styles */
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.content th, .content td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.content th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.content tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+.content tr:hover{
+    background-color: #f1f1f1;
+}
+
+/*Graph container styles */
+.graph-container{
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.graph-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Desigh */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav a {
+        margin: 5px 0;
+    }
+    .graph-container {
+        width: 90%;
+    }
+}
+
+/* Footer styles */
+.footer {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 14px
+}
